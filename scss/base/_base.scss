@@ -1,0 +1,15 @@
+/*les données initials, font family, box size, margin box shadow*/
+@font-face{
+    font-family: "shrikhand";
+    src: url(/font-family/Shrikhand/Shrikhand-Regular.ttf)format(ttf);
+}
+@font-face{
+    font-family: "roboto";
+    src: url(/font-family/Roboto/Roboto-Regular.ttf)format(ttf);
+}
+h1,h2,h3{
+    font-family: "shrikhand";
+}
+p{
+    font-family: "roboto";
+}

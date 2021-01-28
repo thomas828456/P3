@@ -1,0 +1,18 @@
+@import "utils/variables";
+
+@import "base/base";
+
+@import "components/bouton_commander";
+@import "components/bouton_explorer";
+@import "components/icon_like";
+@import "components/icon_nouveau";
+@import "components/icon_validation";
+@import "components/puce_fonctionnement";
+
+@import "layout/barre_recherche";
+@import "layout/carte_plat";
+@import "layout/carte_restaurant";
+@import "layout/footer";
+@import "layout/header";
+
+@import "pages/accueil";
