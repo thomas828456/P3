@@ -1,0 +1,43 @@
+.recherche{
+    background-color: $couleur4;
+    border-top: 2px solid rgba(128, 128, 128, 0.3);
+    &__bloc_recherche{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgba(128, 128, 128, 0.1);
+        &__icon{
+            padding-right: 10px;
+            font-size: .8em;
+            width: 18px;
+            height: 18px;
+            line-height: 18px !important;
+            text-align: center;
+        }
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__h2{
+        text-align: center;
+        padding: 20px 70px 20px 70px;
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+    &__p{
+        text-align: center;
+        padding: 0 15px 40px 15px;
+    }
+    &__bloc_bouton{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    &__input{
+        width: 40%;
+        background: none;
+        border: none;
+    }
+}

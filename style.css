@@ -1,4 +1,247 @@
-@charset "UTF-8";
-/*les données initials, font family, box size, margin box shadow*/
+@font-face {
+  font-family: "shrikhand";
+  src: url("/font-family/Shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("/font-family/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "roboto bold";
+  src: url("/font-family/Roboto/Roboto-Bold.ttf");
+}
+h1 {
+  font-family: "shrikhand";
+}
+
+p {
+  font-family: "roboto";
+}
+
+h2, h3 {
+  font-family: "roboto bold";
+}
+
+body, h1, h2, h3, p {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+form {
+  margin: 0;
+}
+
+.bouton_explorer {
+  width: 190px;
+  color: white;
+  background: #ff79da;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  border-radius: 3em;
+  border: none;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.4);
+}
+
+.icon_like {
+  font-size: 1.6em;
+}
+
+.icon_nouveau {
+  background-color: #99E2D0;
+  color: #278870;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 0.1em;
+  font-size: 0.8em;
+  font-family: "roboto";
+}
+
+.puce_fonctionnement {
+  font-family: "roboto";
+  font-size: 0.7em;
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #9356DC;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.recherche {
+  background-color: rgba(128, 128, 128, 0.1);
+  border-top: 2px solid rgba(128, 128, 128, 0.3);
+}
+.recherche__bloc_recherche {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.recherche__bloc_recherche__icon {
+  padding-right: 10px;
+  font-size: 0.8em;
+  width: 18px;
+  height: 18px;
+  line-height: 18px !important;
+  text-align: center;
+}
+.recherche__form {
+  display: flex;
+  flex-direction: column;
+}
+.recherche__h2 {
+  text-align: center;
+  padding: 20px 70px 20px 70px;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.recherche__p {
+  text-align: center;
+  padding: 0 15px 40px 15px;
+}
+.recherche__bloc_bouton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.recherche__input {
+  width: 40%;
+  background: none;
+  border: none;
+}
+
+.carte_restaurant {
+  position: relative;
+  border-radius: 0.8em;
+  background-color: white;
+  padding-bottom: 5px;
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.4);
+  border-radius: 0.8em;
+}
+.carte_restaurant img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.8em 0.8em 0 0;
+  padding-bottom: 10px;
+}
+.carte_restaurant h3, .carte_restaurant p {
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-size: 0.9em;
+}
+.carte_restaurant i {
+  position: absolute;
+  right: 30px;
+  top: 220px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #363636;
+  color: white;
+  padding: 20px;
+}
+footer img {
+  width: 120px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+footer .logo-blanc {
+  filter: invert(100%) sepia(100%) saturate(19%) hue-rotate(236deg) brightness(104%) contrast(100%);
+}
+footer i {
+  margin-right: 10px;
+}
+footer a {
+  margin-bottom: 10px;
+}
+footer a:visited {
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+header img {
+  height: 30px;
+}
+
+.fonctionnement {
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+.fonctionnement__titre {
+  padding-left: 20px;
+  font-size: 1.2em;
+}
+.fonctionnement__bloc_carte {
+  padding-top: 30px;
+}
+.fonctionnement__carte {
+  position: relative;
+  padding: 20px 15px 20px 30px;
+  box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.4);
+  border-radius: 0.8em;
+  margin: 0 40px 20px 40px;
+  background-color: rgba(128, 128, 128, 0.1);
+  font-weight: 700;
+}
+.fonctionnement__carte__puce {
+  position: absolute;
+  left: -10px;
+  bottom: 18px;
+}
+.fonctionnement__carte i {
+  margin-right: 20px;
+  color: grey;
+}
+.fonctionnement__carte_focus {
+  background-color: #f2eafb;
+}
+.fonctionnement__carte_focus i {
+  color: #9356DC;
+}
+
+.restaurants {
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 60px 20px 30px 20px;
+}
+.restaurants__titre {
+  padding: 0 0 20px 0;
+}
+.restaurants__cartes {
+  margin-bottom: 20px;
+}
+.restaurants__nouveau {
+  /*@if (le restaurant est nouveau){
+      font-size: 1em;
+  }@else{
+      font-size: 0;
+      width: 0;
+  }*/
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

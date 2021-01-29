@@ -1,0 +1,35 @@
+.fonctionnement{
+    margin-top: 60px;
+    padding-bottom: 30px;
+    &__titre{
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    &__bloc_carte{
+        padding-top: 30px;
+    }
+    &__carte{
+        position: relative;
+        padding: 20px 15px 20px 30px;
+        @include box-shadow;
+        @include border-radius;
+        margin: 0 40px 20px 40px;
+        background-color: $couleur4;
+        font-weight: 700;
+        &__puce{
+            position: absolute;
+            left: -10px;
+            bottom: 18px;
+        }
+        i {
+            margin-right: 20px;
+            color: grey;
+        }
+    }
+    &__carte_focus{
+        background-color: lighten($color: $couleur1, $amount: 35%);
+        i{
+            color: $couleur1;
+        }
+    }
+}

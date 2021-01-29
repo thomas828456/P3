@@ -1,6 +1,8 @@
 @import "utils/variables";
+@import "utils/mixin";
 
 @import "base/base";
+@import "base/reset";
 
 @import "components/bouton_commander";
 @import "components/bouton_explorer";
@@ -9,10 +11,12 @@
 @import "components/icon_validation";
 @import "components/puce_fonctionnement";
 
-@import "layout/barre_recherche";
+@import "layout/recherche";
 @import "layout/carte_plat";
 @import "layout/carte_restaurant";
 @import "layout/footer";
 @import "layout/header";
+@import "layout/fonctionnement";
+@import "layout/restaurants";
 
 @import "pages/accueil";
