@@ -1,0 +1,18 @@
+.menu{
+    position: relative;
+    padding: 0 20px 20px 20px;
+    h2{
+        padding: 0 0 20px 5px;
+    }
+    &__h2_sous_ligne{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        width: 40px;
+        height: 2px;
+        background-color: $couleur3;
+    }
+    &__carte{
+        margin-bottom: 20px;
+    }
+}

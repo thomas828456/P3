@@ -1,0 +1,10 @@
+.c-bouton_commander{
+    display: block;
+    @include button_gradient;
+    border-radius: 3em;
+    width: 150px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    @include box-shadow;
+}

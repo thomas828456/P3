@@ -4,3 +4,6 @@
 @mixin border-radius{
     border-radius: .8em;
 }
+@mixin button_gradient{
+    background: linear-gradient(170deg, $couleur2 0%, $couleur1 100%);
+}

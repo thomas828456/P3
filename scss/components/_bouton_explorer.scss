@@ -1,8 +1,7 @@
 .bouton_explorer{
     width: 190px;
     color: white;
-    background: rgb(255,121,218);
-    background: linear-gradient(170deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    @include button_gradient;
     border-radius: 3em;
     border: none;
     padding: 15px;

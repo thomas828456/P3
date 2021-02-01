@@ -6,16 +6,15 @@
     font-family: "roboto";
     src: url("/font-family/Roboto/Roboto-Regular.ttf");
 }
-@font-face{
-    font-family: "roboto bold";
-    src: url("/font-family/Roboto/Roboto-Bold.ttf");
-}
 h1{
     font-family: "shrikhand";
 }
-p{
+p,h2,h3,a,span{
     font-family: "roboto";
 }
 h2,h3{
-    font-family: "roboto bold";
+    font-weight: bold;
+}
+section{
+    background-color: $couleur4;
 }
