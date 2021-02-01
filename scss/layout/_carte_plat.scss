@@ -6,6 +6,12 @@
     h3{
         margin-bottom: 5px;
     }
+    h3,p{ 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 85%;
+    }
     &__prix{
         position: absolute;
         right: 20px;

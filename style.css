@@ -143,6 +143,12 @@ form {
 .carte_plat h3 {
   margin-bottom: 5px;
 }
+.carte_plat h3, .carte_plat p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 85%;
+}
 .carte_plat__prix {
   position: absolute;
   right: 20px;
