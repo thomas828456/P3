@@ -1,7 +1,9 @@
 .fonctionnement{
-    background-color: white;
-    margin-top: 60px;
-    padding-bottom: 30px;
+    &__media_desktop{
+        margin-top: 50px;
+        padding-bottom: 30px;
+        background-color: white;
+    }
     &__titre{
         padding-left: 20px;
         font-size: 1.2em;
@@ -31,6 +33,20 @@
         background-color: lighten($color: $couleur1, $amount: 35%);
         i{
             color: $couleur1;
+        }
+    }
+    @media (min-width:map-get($map: $breakpoint, $key:desktop )) {
+        width: 40%;
+        margin-top: 0;
+        &__titre{
+            padding-top: 20px;
+        }
+        &__bloc_carte{
+            padding-bottom: 20px;
+        }
+        &__media_desktop{
+            margin: 20px;
+            @include border-radius;
         }
     }
 }

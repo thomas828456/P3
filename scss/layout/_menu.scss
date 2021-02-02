@@ -15,4 +15,12 @@
     &__carte{
         margin-bottom: 20px;
     }
+    @media (min-width:map-get($map: $breakpoint, $key:desktop )){
+        width: 27.4%;
+        padding-left: 3%;
+        padding-right: 3%;
+        &__h2_sous_ligne{
+            left: 11%;
+        }
+    }
 }

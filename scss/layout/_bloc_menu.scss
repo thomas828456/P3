@@ -1,0 +1,5 @@
+.bloc_menu{
+    @media (min-width:map-get($map: $breakpoint, $key:desktop )){
+        display: flex;
+    }
+}

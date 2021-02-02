@@ -11,36 +11,40 @@
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo"/>
             </div>
         </header>
-        <section class="recherche">
-            <form method="POST" action="#" class="recherche__form">
-                <div class="recherche__bloc_recherche">
-                    <i class="fas fa-map-marker-alt recherche__bloc_recherche__icon"></i>
-                    <input type="text" name="recherche__input" class="recherche__input" value="Paris, Belleville"/>
+        <div class="bloc_recherche_fonctionnement">
+            <section class="recherche">
+                <form method="POST" action="#" class="recherche__form">
+                    <div class="recherche__bloc_recherche">
+                        <i class="fas fa-map-marker-alt recherche__bloc_recherche__icon"></i>
+                        <input type="text" name="recherche__input" class="recherche__input" value="Paris, Belleville"/>
+                    </div>
+                    <h2 class="recherche__h2">Réservez le menu qui vous convient</h2>
+                    <p class="recherche__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                    <div class="recherche__bloc_bouton">
+                        <button type="submit" class="bouton_explorer bouton">Explorer nos restaurants</button>
+                    </div>
+                </form>
+            </section>
+            <section class="fonctionnement">
+                <div class="fonctionnement__media_desktop">
+                    <h2 class="fonctionnement__titre">Fonctionnement</h2>
+                    <div class="fonctionnement__bloc_carte">
+                        <div class="fonctionnement__carte">
+                            <span class="fonctionnement__carte__puce puce_fonctionnement">1</span>
+                            <p><i class="fas fa-mobile-alt fa-fw"></i>Choisissez un restaurant</p>
+                        </div>
+                        <div class="fonctionnement__carte">
+                            <span class="fonctionnement__carte__puce puce_fonctionnement">2</span>
+                            <p><i class="fas fa-list-ul fa-fw"></i>Composez votre menu</p>
+                        </div>
+                        <div class="fonctionnement__carte fonctionnement__carte_focus">
+                            <span class="fonctionnement__carte__puce puce_fonctionnement">3</span>
+                            <p><i class="fas fa-store fa-fw"></i>Dégustez au restaurant</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="recherche__h2">Réservez le menu qui vous convient</h2>
-                <p class="recherche__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <div class="recherche__bloc_bouton">
-                    <button type="submit" class="bouton_explorer">Explorer nos restaurants</button>
-                </div>
-            </form>
-        </section>
-        <section class="fonctionnement">
-            <h2 class="fonctionnement__titre">Fonctionnement</h2>
-            <div class="fonctionnement__bloc_carte">
-                <div class="fonctionnement__carte">
-                    <span class="fonctionnement__carte__puce puce_fonctionnement">1</span>
-                    <p><i class="fas fa-mobile-alt fa-fw"></i>Choisissez un restaurant</p>
-                </div>
-                <div class="fonctionnement__carte">
-                    <span class="fonctionnement__carte__puce puce_fonctionnement">2</span>
-                    <p><i class="fas fa-list-ul fa-fw"></i>Composez votre menu</p>
-                </div>
-                <div class="fonctionnement__carte fonctionnement__carte_focus">
-                    <span class="fonctionnement__carte__puce puce_fonctionnement">3</span>
-                    <p><i class="fas fa-store fa-fw"></i>Dégustez au restaurant</p>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="restaurants">
             <h2 class="restaurants__titre">Restaurants</h2>
             <div class="restaurants__bloc_cartes">
@@ -83,21 +87,27 @@
             </div>
         </section>
         <footer>
-            <img src="images/logo/ohmyfood@2x.svg" class="logo-blanc" alt="logo"/>
-            <a href="#">
-                <i class="fas fa-utensils fa-fw"></i>
-                Proposer un restaurant
-            </a>
-            <a href="#">
-                <i class="fas fa-hands-helping fa-fw"></i>
-                Devenir partenaire
-            </a>
-            <a href="#">
-                Mentions légales
-            </a>
-            <a href="mailto:">
-                Contact
-            </a>
+            <div class="footer__bloc">
+                <img src="images/logo/ohmyfood@2x.svg" class="logo-blanc" alt="logo"/>
+            </div>
+            <div class="footer__bloc">
+                <a href="#">
+                    <i class="fas fa-utensils fa-fw"></i>
+                    Proposer un restaurant
+                </a>
+                <a href="#">
+                    <i class="fas fa-hands-helping fa-fw"></i>
+                    Devenir partenaire
+                </a>   
+            </div>
+            <div class="footer__bloc">
+                <a href="#">
+                    Mentions légales
+                </a>
+                <a href="mailto:">
+                    Contact
+                </a>
+            </div>
         </footer>
         </body>
     </body>

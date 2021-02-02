@@ -1,9 +1,12 @@
-@mixin box-shadow{
-    box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.4);
+@mixin box-shadow($spread:4px){
+    box-shadow: 2px 2px 8px $spread rgba(128, 128, 128, 0.4);
 }
 @mixin border-radius{
     border-radius: .8em;
 }
 @mixin button_gradient{
     background: linear-gradient(170deg, $couleur2 0%, $couleur1 100%);
+}
+@mixin border-top {
+    border-top: 2px solid rgba(121, 121, 121, 0.3);
 }

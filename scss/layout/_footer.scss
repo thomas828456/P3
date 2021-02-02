@@ -21,4 +21,14 @@ footer{
     a:visited{
         color: white;
     }
+    @media (min-width:map-get($breakpoint,desktop)){
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.footer{
+    &__bloc{
+        display: flex;
+        flex-direction: column;
+    }
 }
