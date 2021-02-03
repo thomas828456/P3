@@ -7,11 +7,14 @@
     </head>
     <body>
         <header>
+        <!--début header-->
             <div>
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo"/>
             </div>
         </header>
+        <!--fin header-->
         <div class="bloc_recherche_fonctionnement">
+            <!--début recherche-->
             <section class="recherche">
                 <form method="POST" action="#" class="recherche__form">
                     <div class="recherche__bloc_recherche">
@@ -25,6 +28,8 @@
                     </div>
                 </form>
             </section>
+            <!--fin recherche-->
+            <!--début fonctionnement-->
             <section class="fonctionnement">
                 <div class="fonctionnement__media_desktop">
                     <h2 class="fonctionnement__titre">Fonctionnement</h2>
@@ -44,7 +49,9 @@
                     </div>
                 </div>
             </section>
+            <!--fin fonctionnement-->
         </div>
+        <!--début restaurants-->
         <section class="restaurants">
             <h2 class="restaurants__titre">Restaurants</h2>
             <div class="restaurants__bloc_cartes">
@@ -53,7 +60,13 @@
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût"/>
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
-                        <span><i class="far fa-heart icon_like"></i></span>
+                        <div class="carte_restaurant__icon">
+                            <div class="icon_bloc">
+                                <i class="far fa-heart icon_like icon_like__contour"></i>
+                                <div class="icon_like icon_like__mouvant"></div>
+                                <i class="fa fa-heart icon_like icon_like__background"></i>
+                            </div>
+                        </div>
                         <span class="restaurants__nouveau icon_nouveau">Nouveau</span>
                     </a>
                 </div>
@@ -62,7 +75,13 @@
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée"/>
                         <h3>La note enchantée</h3>
                         <p>Charonne</p>
-                        <span><i class="far fa-heart icon_like"></i></span>
+                        <div class="carte_restaurant__icon">
+                            <div class="icon_bloc">
+                                <i class="far fa-heart icon_like icon_like__contour"></i>
+                                <div class="icon_like icon_like__mouvant"></div>
+                                <i class="fa fa-heart icon_like icon_like__background"></i>
+                            </div>
+                        </div>
                         <span class="restaurants__nouveau icon_nouveau">Nouveau</span>
                     </a>
                 </div>
@@ -71,8 +90,13 @@
                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française"/>
                         <h3>À la française</h3>
                         <p>Cité Rouge</p>
-                        <span><i class="far fa-heart icon_like"></i></span>
-                        <!--<span class="restaurants__nouveau icon_nouveau">Nouveau</span>-->
+                        <div class="carte_restaurant__icon">
+                            <div class="icon_bloc">
+                                <i class="far fa-heart icon_like icon_like__contour"></i>
+                                <div class="icon_like icon_like__mouvant"></div>
+                                <i class="fa fa-heart icon_like icon_like__background"></i>
+                            </div>
+                        </div>
                     </a>
                 </div>
                 <div class="restaurants__cartes carte_restaurant">
@@ -80,12 +104,19 @@
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens"/>
                         <h3>Le délice des sens</h3>
                         <p>Folie-Méricourt</p>
-                        <span><i class="far fa-heart icon_like"></i></span>
-                        <!--<span class="restaurants__nouveau icon_nouveau">Nouveau</span>-->
+                        <div class="carte_restaurant__icon">
+                            <div class="icon_bloc">
+                                <i class="far fa-heart icon_like icon_like__contour"></i>
+                                <div class="icon_like icon_like__mouvant"></div>
+                                <i class="fa fa-heart icon_like icon_like__background"></i>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
+        <!--fin restaurants-->
+        <!--début footer-->
         <footer>
             <div class="footer__bloc">
                 <img src="images/logo/ohmyfood@2x.svg" class="logo-blanc" alt="logo"/>
@@ -109,6 +140,7 @@
                 </a>
             </div>
         </footer>
+        <!--fin footer-->
         </body>
     </body>
 </html>

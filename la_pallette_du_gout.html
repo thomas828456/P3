@@ -6,6 +6,7 @@
         <title>Oh My Food ! - Menu - La palette du goût</title>
     </head>
     <body>
+        <!--début header-->
         <header>
             <a href="index.html">
                 <i class="fas fa-arrow-left"></i>
@@ -14,14 +15,22 @@
                 <img src="images/logo/ohmyfood@2x.svg" alt="logo"/>
             </div>
         </header>
+        <!--fin header-->
+        <!--début titre-->
         <section class="titre_page">
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du gout"/>
             <div class="titre_page__bloc_h1">
                 <h1>La palette du goût</h1>
             </div>
-            <span><i class="far fa-heart icon_like"></i></span>
+            <div class="icon_bloc titre_page__icon">
+                <i class="far fa-heart icon_like icon_like__contour"></i>
+                <div class="icon_like icon_like__mouvant"></div>
+                <i class="fa fa-heart icon_like icon_like__background"></i>
+            </div>
         </section>
+        <!--fin titre-->
         <div class="bloc_menu">
+            <!--début entrées-->
             <section class="menu">
                 <h2>ENTRÉES</h2>
                 <div class="menu__h2_sous_ligne"></div>
@@ -43,6 +52,8 @@
                     </div>
                 </div>
             </section>
+            <!--fin entrées-->
+            <!--début plats-->
             <section class="menu">
                 <h2>PLATS</h2>
                 <div class="menu__h2_sous_ligne"></div>
@@ -64,6 +75,8 @@
                     </div>
                 </div>
             </section>
+            <!--fin plats-->
+            <!--début desserts-->
             <section class="menu">
                 <h2>DESSERTS</h2>
                 <div class="menu__h2_sous_ligne"></div>
@@ -85,12 +98,16 @@
                     </div>
                 </div>
             </section>
+            <!--fin desserts-->
         </div>
+        <!--début commander-->
         <section class="commander">
             <a href="#" class="commander__bouton bouton c-bouton_commander">
                 Commander
             </a>
         </section>
+        <!--fin commander-->
+        <!--début footer-->
         <footer>
             <div class="footer__bloc">
                 <img src="images/logo/ohmyfood@2x.svg" class="logo-blanc" alt="logo"/>
@@ -114,5 +131,6 @@
                 </a>
             </div>
         </footer>
+        <!--fin footer-->
     </body>
 </html>

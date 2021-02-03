@@ -1,6 +1,7 @@
 .bouton{
+    transition: box-shadow 1s,filter 1s;
     &:hover{
         filter: brightness(140%);
-        @include box-shadow(40px);
+        @include box-shadow(10px,rgba(128, 128, 128, 0.8));
     }
 }

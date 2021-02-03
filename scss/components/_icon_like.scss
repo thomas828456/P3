@@ -1,3 +1,31 @@
+.icon_bloc{
+    position: relative;
+}
 .icon_like{
+    background: none;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.icon_like__contour{
     font-size: 1.6em;
+    z-index: 1;
+    &:hover + .icon_like__mouvant{
+        transform: scaleY(0);
+    }
+}
+.icon_like__mouvant{
+    content: "";
+    background-color: $couleur_background;
+    width: 26px;
+    height: 26px;
+    z-index: -1;
+    transform-origin: top;
+    transition: transform 2s linear;
+}
+.icon_like__background{
+    right: 1px;
+    font-size: 1.5em;
+    color: $couleur_secondaire;
+    z-index: -3;
 }

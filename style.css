@@ -34,7 +34,7 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: initial;
 }
 
 form {
@@ -62,8 +62,40 @@ form {
   box-shadow: 2px 2px 8px 4px rgba(128, 128, 128, 0.4);
 }
 
+.icon_bloc {
+  position: relative;
+}
+
 .icon_like {
+  background: none;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+}
+
+.icon_like__contour {
   font-size: 1.6em;
+  z-index: 1;
+}
+.icon_like__contour:hover + .icon_like__mouvant {
+  transform: scaleY(0);
+}
+
+.icon_like__mouvant {
+  content: "";
+  background-color: #f0f0f0;
+  width: 26px;
+  height: 26px;
+  z-index: -1;
+  transform-origin: top;
+  transition: transform 2s linear;
+}
+
+.icon_like__background {
+  right: 1px;
+  font-size: 1.5em;
+  color: #FF79DA;
+  z-index: -3;
 }
 
 .icon_nouveau {
@@ -91,9 +123,12 @@ form {
   border-radius: 50%;
 }
 
+.bouton {
+  transition: box-shadow 1s, filter 1s;
+}
 .bouton:hover {
   filter: brightness(140%);
-  box-shadow: 2px 2px 8px 40px rgba(128, 128, 128, 0.4);
+  box-shadow: 2px 2px 8px 10px rgba(128, 128, 128, 0.8);
 }
 
 .recherche {
@@ -140,8 +175,11 @@ form {
 }
 @media (min-width: 890px) {
   .recherche {
-    width: 60%;
+    width: 70%;
     border: none;
+  }
+  .recherche__input {
+    max-width: 200px;
   }
   .recherche__form {
     height: 100%;
@@ -195,10 +233,14 @@ form {
   padding-left: 10px;
   font-size: 0.9em;
 }
-.carte_restaurant i {
+.carte_restaurant__icon {
   position: absolute;
   right: 30px;
-  top: 220px;
+  top: 240px;
+  z-index: 1;
+}
+.carte_restaurant__icon .icon_like__mouvant {
+  background-color: white;
 }
 
 footer {
@@ -222,7 +264,7 @@ footer i {
 footer a {
   margin-bottom: 10px;
 }
-footer a:visited {
+footer a:visited, footer a {
   color: white;
 }
 @media (min-width: 890px) {
@@ -230,11 +272,15 @@ footer a:visited {
     flex-direction: row;
     justify-content: space-around;
   }
+  footer .logo-blanc {
+    margin: 0;
+  }
 }
 
 .footer__bloc {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -295,7 +341,7 @@ header i {
 }
 @media (min-width: 890px) {
   .fonctionnement {
-    width: 40%;
+    width: 30%;
     margin-top: 0;
   }
   .fonctionnement__titre {
@@ -325,12 +371,6 @@ header i {
   }
 }
 .restaurants__nouveau {
-  /*@if (le restaurant est nouveau){
-      font-size: 1em;
-  }@else{
-      font-size: 0;
-      width: 0;
-  }*/
   position: absolute;
   top: 10px;
   right: 10px;
@@ -393,10 +433,11 @@ header i {
 .titre_page h1 {
   padding: 30px 0 30px 20px;
 }
-.titre_page i {
+.titre_page__icon {
   position: absolute;
   right: 40px;
   bottom: -20px;
+  z-index: 2;
 }
 
 .commander {

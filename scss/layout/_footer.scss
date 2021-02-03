@@ -18,17 +18,21 @@ footer{
     a{
         margin-bottom: 10px;
     }
-    a:visited{
+    a:visited, a{
         color: white;
     }
     @media (min-width:map-get($breakpoint,desktop)){
         flex-direction: row;
         justify-content: space-around;
+        .logo-blanc{
+            margin: 0;
+        }
     }
 }
 .footer{
     &__bloc{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 }

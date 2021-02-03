@@ -17,7 +17,7 @@
         @include box-shadow;
         @include border-radius;
         margin: 0 40px 20px 40px;
-        background-color: $couleur4;
+        background-color: $couleur_background;
         font-weight: 700;
         &__puce{
             position: absolute;
@@ -30,13 +30,13 @@
         }
     }
     &__carte_focus{
-        background-color: lighten($color: $couleur1, $amount: 35%);
+        background-color: lighten($color: $couleur_primaire, $amount: 35%);
         i{
-            color: $couleur1;
+            color: $couleur_primaire;
         }
     }
     @media (min-width:map-get($map: $breakpoint, $key:desktop )) {
-        width: 40%;
+        width: 30%;
         margin-top: 0;
         &__titre{
             padding-top: 20px;

@@ -17,9 +17,13 @@
         padding-left: 10px;
         font-size: .9em;
     }
-    i{
+    &__icon{
         position: absolute;
         right: 30px;
-        top: 220px;
+        top: 240px;
+        z-index: 1;
+        .icon_like__mouvant{
+            background-color: white;
+        }
     }
 }
