@@ -186,16 +186,28 @@ form {
     justify-content: center;
   }
   .recherche__bloc_recherche {
-    border-radius: 0.8em;
+    border-radius: 0.8em 0.8em 0.8em 0.8em;
     margin: 0 40px 0 40px;
   }
 }
 
 .carte_plat {
   background-color: white;
-  border-radius: 1em;
-  padding: 10px;
+  border-radius: 0.8em 0.8em 0.8em 0.8em;
   position: relative;
+}
+.carte_plat__bloc_g {
+  position: relative;
+  background-color: white;
+  border-radius: 0.8em 0.8em 0.8em 0.8em;
+  width: 100%;
+  z-index: 2;
+}
+.carte_plat__bloc_g:hover + .carte_plat__coche {
+  animation: coche_anim 3s linear forwards;
+}
+.carte_plat__bloc_g:hover {
+  animation: coche_anim2 3s linear forwards;
 }
 .carte_plat h3 {
   margin-bottom: 5px;
@@ -212,14 +224,42 @@ form {
   bottom: 10px;
   font-weight: bold;
 }
+.carte_plat__coche {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #99E2D0;
+  width: 80px;
+  border-radius: 0 0.8em 0.8em 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
 
+.fa-check-circle {
+  color: white;
+  font-size: 2em;
+}
+
+@keyframes coche_anim {
+  to {
+    width: 80px;
+  }
+}
+@keyframes coche_anim2 {
+  to {
+    width: calc(100% - 70px);
+  }
+}
 .carte_restaurant {
   position: relative;
   border-radius: 0.8em;
   background-color: white;
   padding-bottom: 5px;
   box-shadow: 2px 2px 8px 4px rgba(128, 128, 128, 0.4);
-  border-radius: 0.8em;
+  border-radius: 0.8em 0.8em 0.8em 0.8em;
 }
 .carte_restaurant img {
   height: 200px;
@@ -319,7 +359,7 @@ header i {
   position: relative;
   padding: 20px 15px 20px 30px;
   box-shadow: 2px 2px 8px 4px rgba(128, 128, 128, 0.4);
-  border-radius: 0.8em;
+  border-radius: 0.8em 0.8em 0.8em 0.8em;
   margin: 0 40px 20px 40px;
   background-color: #f0f0f0;
   font-weight: 700;
@@ -352,7 +392,7 @@ header i {
   }
   .fonctionnement__media_desktop {
     margin: 20px;
-    border-radius: 0.8em;
+    border-radius: 0.8em 0.8em 0.8em 0.8em;
   }
 }
 
@@ -402,6 +442,19 @@ header i {
 }
 .menu__carte {
   margin-bottom: 20px;
+  animation: menu_anim 2s ease-out backwards;
+}
+.menu__carte__1 {
+  animation-delay: 0s;
+}
+.menu__carte__2 {
+  animation-delay: 0.5s;
+}
+.menu__carte__3 {
+  animation-delay: 1s;
+}
+.menu__carte__4 {
+  animation-delay: 1.5s;
 }
 @media (min-width: 890px) {
   .menu {
@@ -414,6 +467,12 @@ header i {
   }
 }
 
+@keyframes menu_anim {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
 .titre_page {
   position: relative;
   margin-bottom: 60px;

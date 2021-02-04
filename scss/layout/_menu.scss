@@ -14,6 +14,12 @@
     }
     &__carte{
         margin-bottom: 20px;
+        animation: menu_anim 2s ease-out backwards;
+        @each $position,$delay in $anim_delay {
+            &__#{$position}{
+                animation-delay:map-get($map: $anim_delay, $key: $position) ;
+            }
+        }
     }
     @media (min-width:map-get($map: $breakpoint, $key:desktop )){
         width: 27.4%;
@@ -22,5 +28,11 @@
         &__h2_sous_ligne{
             left: 11%;
         }
+    }
+}
+@keyframes menu_anim{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
     }
 }

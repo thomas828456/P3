@@ -1,8 +1,8 @@
 @mixin box-shadow($spread:4px,$couleur:rgba(128, 128, 128, 0.4)){
     box-shadow: 2px 2px 8px $spread $couleur;
 }
-@mixin border-radius{
-    border-radius: .8em;
+@mixin border-radius($tl:.8em,$tr:.8em,$br:.8em,$bl:.8em){
+    border-radius: $tl $tr $br $bl;
 }
 @mixin button_gradient{
     background: linear-gradient(170deg, $couleur_secondaire 0%, $couleur_primaire 100%);
