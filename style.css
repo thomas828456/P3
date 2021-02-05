@@ -110,6 +110,19 @@ form {
   font-family: "roboto";
 }
 
+.spinner {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  animation: spinner 2s linear;
+}
+
+@keyframes {
+  to {
+    background-color: rgba(128, 128, 128, 0.2);
+    transform: rotate(180deg);
+  }
+}
 .puce_fonctionnement {
   font-family: "roboto";
   font-size: 0.7em;
@@ -194,20 +207,21 @@ form {
 .carte_plat {
   background-color: white;
   border-radius: 0.8em 0.8em 0.8em 0.8em;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 .carte_plat__bloc_g {
   position: relative;
   background-color: white;
+  padding: 10px;
   border-radius: 0.8em 0.8em 0.8em 0.8em;
   width: 100%;
-  z-index: 2;
 }
 .carte_plat__bloc_g:hover + .carte_plat__coche {
-  animation: coche_anim 3s linear forwards;
+  animation: coche_anim 0.5s linear forwards;
 }
-.carte_plat__bloc_g:hover {
-  animation: coche_anim2 3s linear forwards;
+.carte_plat__bloc_g:hover + .carte_plat__coche .fa-check-circle {
+  animation: coche_anim2 0.5s 0.1s linear forwards;
 }
 .carte_plat h3 {
   margin-bottom: 5px;
@@ -221,26 +235,23 @@ form {
 .carte_plat__prix {
   position: absolute;
   right: 20px;
-  bottom: 10px;
+  bottom: 20px;
   font-weight: bold;
 }
 .carte_plat__coche {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
   background-color: #99E2D0;
-  width: 80px;
+  width: 0;
   border-radius: 0 0.8em 0.8em 0;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   overflow: hidden;
 }
 
 .fa-check-circle {
   color: white;
   font-size: 2em;
+  line-height: 63px !important;
+  rotate: 180deg;
 }
 
 @keyframes coche_anim {
@@ -250,7 +261,7 @@ form {
 }
 @keyframes coche_anim2 {
   to {
-    width: calc(100% - 70px);
+    transform: rotate(180deg);
   }
 }
 .carte_restaurant {

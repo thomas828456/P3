@@ -1,18 +1,19 @@
 .carte_plat{
     background-color: white;
     @include border-radius;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
     &__bloc_g{
         position: relative;
         background-color: white;
+        padding: 10px;
         @include border-radius;
         width: 100%;
-        z-index: 2;
         &:hover+.carte_plat__coche{
-            animation: coche_anim 3s linear forwards;
-        }
-        &:hover{
-            animation: coche_anim2 3s linear forwards;
+            animation: coche_anim .5s linear forwards;
+            .fa-check-circle{
+                animation: coche_anim2 .5s .1s linear forwards;
+            }
         }
     }
     h3{
@@ -27,26 +28,23 @@
     &__prix{
         position: absolute;
         right: 20px;
-        bottom: 10px;
+        bottom: 20px;
         font-weight: bold;
     }
     &__coche{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
         background-color: $couleur_tertiaire;
-        width: 80px;
+        width: 0;
         @include border-radius($tl:0,$bl:0);
         display: flex;
         justify-content: center;
-        flex-direction: column;
         overflow: hidden;
     }
 }
 .fa-check-circle{
     color: white;
     font-size: 2em;
+    line-height: 63px !important;
+    rotate: 180deg;
 }
 @keyframes coche_anim{
     to{
@@ -55,6 +53,6 @@
 }
 @keyframes coche_anim2{
     to{
-        width: calc(100% - 70px);
+        transform: rotate(180deg);
     }
 }

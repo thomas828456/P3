@@ -1,0 +1,12 @@
+.spinner{
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    animation: spinner 2s linear;
+}
+@keyframes{
+    to{
+        background-color: rgba(128, 128, 128, 0.2);        
+        transform : rotate(180deg);
+    }
+}
