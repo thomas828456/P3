@@ -111,16 +111,42 @@ form {
 }
 
 .spinner {
+  background-color: rgba(75, 75, 75, 0.6);
   position: fixed;
-  width: 100vh;
-  height: 100vh;
-  animation: spinner 2s linear;
+  width: 0;
+  height: 0;
+  font-size: 8em;
+  top: 0px;
+  left: 0px;
+  z-index: -99;
+  cursor: wait;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: spinner_background 2s;
+  text-align: center;
+}
+.spinner .fa-spinner {
+  animation: spinner_rotate 2s linear;
+  color: #99E2D0;
+  text-shadow: #9356DC 0 0 15px;
 }
 
-@keyframes {
+@keyframes spinner_background {
+  from {
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+  }
   to {
-    background-color: rgba(128, 128, 128, 0.2);
-    transform: rotate(180deg);
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@keyframes spinner_rotate {
+  to {
+    transform: rotate(720deg);
   }
 }
 .puce_fonctionnement {
@@ -186,13 +212,15 @@ form {
   background: none;
   border: none;
 }
-@media (min-width: 890px) {
-  .recherche {
-    width: 70%;
-    border: none;
-  }
+@media (min-width: 590px) {
   .recherche__input {
     max-width: 200px;
+  }
+}
+@media (min-width: 990px) {
+  .recherche {
+    width: 60%;
+    border: none;
   }
   .recherche__form {
     height: 100%;
@@ -318,7 +346,7 @@ footer a {
 footer a:visited, footer a {
   color: white;
 }
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   footer {
     flex-direction: row;
     justify-content: space-around;
@@ -390,9 +418,9 @@ header i {
 .fonctionnement__carte_focus i {
   color: #9356DC;
 }
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   .fonctionnement {
-    width: 30%;
+    width: 40%;
     margin-top: 0;
   }
   .fonctionnement__titre {
@@ -416,7 +444,7 @@ header i {
 .restaurants__cartes {
   margin-bottom: 20px;
 }
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   .restaurants__cartes {
     width: 23.5%;
   }
@@ -426,7 +454,7 @@ header i {
   top: 10px;
   right: 10px;
 }
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   .restaurants {
     padding-top: 0;
   }
@@ -467,7 +495,7 @@ header i {
 .menu__carte__4 {
   animation-delay: 1.5s;
 }
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   .menu {
     width: 27.4%;
     padding-left: 3%;
@@ -517,14 +545,14 @@ header i {
   justify-content: center;
 }
 
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   .bloc_recherche_fonctionnement {
     display: flex;
     border-top: 2px solid rgba(121, 121, 121, 0.3);
   }
 }
 
-@media (min-width: 890px) {
+@media (min-width: 990px) {
   .bloc_menu {
     display: flex;
   }

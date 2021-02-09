@@ -39,12 +39,14 @@
         background: none;
         border: none;
     }
-    @media (min-width:map-get($map: $breakpoint, $key:desktop )){
-        width: 70%;
-        border: none;
+    @media (min-width:map-get($map: $breakpoint, $key:tablet )){
         &__input{
             max-width: 200px;
         }
+    }
+    @media (min-width:map-get($map: $breakpoint, $key:desktop )){
+        width: 60%;
+        border: none;
         &__form{
             height: 100%;
             justify-content: center;
