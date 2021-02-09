@@ -1,8 +1,8 @@
 .spinner{
     background-color: rgba(75, 75, 75, 0.6);   
     position: fixed;
-    width: 0;
-    height: 0;
+    width: 100vw;
+    height: 100vh;
     font-size: 8em;
     top: 0px;
     left: 0px;
@@ -22,13 +22,9 @@
 @keyframes spinner_background{
     from{
         z-index: 99;
-        width: 100vw;
-        height: 100vh;
     }
     to{
         z-index: 99;
-        width: 100vw;
-        height: 100vh;
     }
 
 }
