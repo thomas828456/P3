@@ -275,7 +275,7 @@ form {
   color: white;
   font-size: 2em;
   line-height: 63px !important;
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 @keyframes coche_anim {
@@ -285,7 +285,7 @@ form {
 }
 @keyframes coche_anim2 {
   to {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 .carte_restaurant {
@@ -378,17 +378,13 @@ header i {
   top: 20px;
 }
 
-.fonctionnement__media_desktop {
-  margin-top: 50px;
-  padding-bottom: 30px;
-  background-color: white;
-}
 .fonctionnement__titre {
   padding-left: 20px;
   font-size: 1.2em;
 }
 .fonctionnement__bloc_carte {
   padding-top: 30px;
+  padding-bottom: 15px;
 }
 .fonctionnement__carte {
   position: relative;
@@ -418,6 +414,11 @@ header i {
   .fonctionnement {
     width: 40%;
     margin-top: 0;
+  }
+  .fonctionnement__media_desktop {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    background-color: white;
   }
   .fonctionnement__titre {
     padding-top: 20px;

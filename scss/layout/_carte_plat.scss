@@ -44,7 +44,7 @@
     color: white;
     font-size: 2em;
     line-height: 63px !important;
-    rotate: 180deg;
+    transform: rotate(180deg);
 }
 @keyframes coche_anim{
     to{
@@ -53,6 +53,6 @@
 }
 @keyframes coche_anim2{
     to{
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
 }

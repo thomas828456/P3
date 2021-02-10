@@ -1,15 +1,11 @@
 .fonctionnement{
-    &__media_desktop{
-        margin-top: 50px;
-        padding-bottom: 30px;
-        background-color: white;
-    }
     &__titre{
         padding-left: 20px;
         font-size: 1.2em;
     }
     &__bloc_carte{
         padding-top: 30px;
+        padding-bottom: 15px;
     }
     &__carte{
         position: relative;
@@ -36,6 +32,11 @@
         }
     }
     @media (min-width:map-get($map: $breakpoint, $key:desktop )) {
+        &__media_desktop{
+            margin-top: 50px;
+            padding-bottom: 30px;
+            background-color: white;
+        }
         width: 40%;
         margin-top: 0;
         &__titre{
