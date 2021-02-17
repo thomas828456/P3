@@ -24,11 +24,11 @@
             margin-right: 20px;
             color: grey;
         }
-    }
-    &__carte_focus{
-        background-color: lighten($color: $couleur_primaire, $amount: 35%);
-        i{
-            color: $couleur_primaire;
+        &:hover{
+            background-color: lighten($color: $couleur_primaire, $amount: 35%);
+            i{
+                color: $couleur_primaire;
+            }
         }
     }
     @media (min-width:map-get($map: $breakpoint, $key:desktop )) {

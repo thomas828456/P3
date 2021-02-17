@@ -404,10 +404,10 @@ header i {
   margin-right: 20px;
   color: grey;
 }
-.fonctionnement__carte_focus {
+.fonctionnement__carte:hover {
   background-color: #f2eafb;
 }
-.fonctionnement__carte_focus i {
+.fonctionnement__carte:hover i {
   color: #9356DC;
 }
 @media (min-width: 990px) {
